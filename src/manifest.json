@@ -1,0 +1,23 @@
+{
+    "compatibleVersion": 3,
+    "bundleVersion": 1,
+    "commands": [
+        {
+            "name": "✏️ Sketch Line Art",
+            "identifier": "sla-script",
+            "script": "./script.js",
+            "handlers": {
+                "run": "onRun",
+                "actions": {
+                    "Shutdown": "onShutdown"
+                }
+            }
+        }
+    ],
+    "menu": {
+        "title": "🔲 Sketch Lineout",
+        "items": ["sla-script"],
+        "isRoot": true
+    },
+    "icon": "icon.png"
+}

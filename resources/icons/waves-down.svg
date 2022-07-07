@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Line type - Down</title>
+    <g id="Line-type---Down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <line x1="0.5" y1="13.5" x2="26.5" y2="13.5" id="plan" stroke="#979797" opacity="0.5"></line>
+        <path d="M0.5,21.5 C2.16666667,21.5 3.5,21.5 4.5,21.5 C6,21.5 6,13.5 7.5,13.5 C9,13.5 9,21.5 10.5,21.5 C12,21.5 12,20 13.5,20 C15,20 15,21.5 16.5,21.5 C18,21.5 18,19 19.5,19 C21,19 21,21.5 22.5,21.5 C23.5,21.5 24.8333333,21.5 26.5,21.5" id="Line" stroke="#FFFFFF" transform="translate(13.500000, 17.500000) scale(-1, -1) translate(-13.500000, -17.500000) "></path>
+    </g>
+</svg>

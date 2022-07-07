@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sketch Line Art</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="view">
+        <p class="label--tabGroups">Generate Line Art from your shape</p>
+        <div class="table">
+            <!-- Layout -->
+            <div class="tr tr-labeled">
+                <div class="td" colspan="5">
+                    <div>
+                        <label class="label--tabGroups" for="layoutGroup">Layout</label>
+                    </div>
+                    <div>
+                        <ul class="buttonGroup buttonGroup-2" name="layoutGroup" id="layoutGroup">
+                            <li>
+                                <input type="radio" id="layout1" name="layout" value="1" checked /></span>
+                                <label class="button secondary button-first" for="layout1"><img src="icons/layout-full.svg" class="svg-tint" title="Full Size"></label>    
+                            </li>
+                            <li>
+                                <input type="radio" id="layout2" name="layout" value="2" />
+                                <label class="button secondary button-last" for="layout2"><img src="icons/layout-shape.svg" class="svg-tint" title="Shape Size"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Type -->
+            <div class="tr tr-labeled"> 
+                <div class="td" colspan="5">
+                    <div>
+                        <label class="label--tabGroups" for="wavesTypeGroup">Waves Type</label>
+                    </div>
+                    <div>
+                        <ul class="buttonGroup buttonGroup-3" name="wavesTypeGroup" id="wavesTypeGroup">
+                            <li>
+                                <input type="radio" id="wavesType-up" name="wavesType" value="1" checked />
+                                <label class="button secondary button-first" for="wavesType-up"><img src="icons/waves-up.svg" class="svg-tint" title="Waves above the line"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="wavesType-down" name="wavesType" value="2" />
+                                <label class="button secondary" for="wavesType-down"><img src="icons/waves-down.svg" class="svg-tint" title="Waves below the line"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="wavesType-both" name="wavesType" value="3" />
+                                <label class="button secondary button-last" for="wavesType-both"><img src="icons/waves-both.svg" class="svg-tint" title="Waves both above and below the line"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <div></div>
+            </div>
+            
+            <!-- Curve type -->
+
+            <div class="tr">
+                <div>
+                    <label class="label--tabGroups" for="layoutGroup">Lines and waves settings</label>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td cell cell-data">
+                    <label for="verticalRythm">Line vertical rythm</label>
+                    <select id="verticalRythm" name="verticalRythm" class="select-css">
+                        <option value="1">1.067 - Minor Second</option>
+                        <option value="2">1.125 - Major Second</option>
+                        <option value="3">1.250 - Major Third</option>
+                        <option value="4">1.333 - Perfect Fourth</option>
+                        <option value="5">1.414 - Augmented Fourth</option>
+                        <option value="6">1.500 - Perfect Fifth</option>
+                        <option value="7">1.618 - Golden Ratio</option>
+                        <!-- <option value="8">3.14  - Pi</option>
+                        <option value="0">Value input</option> -->
+                    </select>
+                </div>
+                <!-- <div class="td cell cell-space"></div>
+                <div class="td cell cell-data cell-data-right">
+                    <label for="verticalRythmValue">Multiplier value</label>
+                    <input type="number" id="verticalRythmValue" name="verticalRythmValue" pattern="/^\d+$/" placeholder="4" disabled />
+                </div> -->
+            </div>
+            <div class="tr">
+                <div class="td cell cell-data">
+                    <label for="pointsRatio">Horizontal points rythm</label>
+                    <select id="pointsRatio" name="pointsRa tio" class="select-css">
+                        <option value="1">1.067 - Minor Second</option>
+                        <option value="2">1.125 - Major Second</option>
+                        <option value="3">1.250 - Major Third</option>
+                        <option value="4">1.333 - Perfect Fourth</option>
+                        <option value="5">1.414 - Augmented Fourth</option>
+                        <option value="6">1.500 - Perfect Fifth</option>
+                        <option value="7">1.618 - Golden Ratio</option>
+                        <option value="8">3.14  - Pi</option>
+                        <!-- <option value="0">Value input</option> -->
+                    </select>
+                </div>
+                <!-- <div class="td cell cell-space"></div>
+                <div class="td cell cell-data cell-data-right">
+                    <label for="pointsRatioValue">Multiplier value</label>
+                    <input type="number" id="pointsRatioValue" name="pointsRatioValue" pattern="/^\d+$/" placeholder="4" disabled />
+                </div> -->
+            </div>
+            <div class="tr">
+                <div class="td cell cell-data">
+                    <label for="pointsHeightRatio">Points height ratio</label>
+                    <select id="pointsHeightRatio" name="pointsHeightRatio" class="select-css">
+                        <option value="1">1.067 - Minor Second</option>
+                        <option value="2">1.125 - Major Second</option>
+                        <option value="3">1.250 - Major Third</option>
+                        <option value="4">1.333 - Perfect Fourth</option>
+                        <option value="5">1.414 - Augmented Fourth</option>
+                        <option value="6">1.500 - Perfect Fifth</option>
+                        <option value="7">1.618 - Golden Ratio</option>
+                        <option value="8">3.14  - Pi</option>
+                        <!-- <option value="0">Value input</option> -->
+                    </select>
+                </div>
+                <!-- <div class="td cell cell-space"></div>
+                <div class="td cell cell-data cell-data-right">
+                    <label for="pointsHeightRatioValue">Multiplier value</label>
+                    <input type="number" id="pointsHeightRatioValue" name="pointsHeightRatioValue" pattern="/^\d+$/" placeholder="4" disabled />
+                </div> -->
+            </div>
+        </div>
+        <footer>
+            <div class="footer-background">
+                <button class="primary" id="parametersSubmit">Create Art</button>
+            </div>
+        </footer>
+    </div>
+    <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+    <script src="../resources_webview.js"></script>
+</body>
+
+</html>
